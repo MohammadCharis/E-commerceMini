@@ -1,0 +1,1 @@
+<!doctype html><html><body class="p-6">@vite(['resources/css/app.css','resources/js/app.js'])<h1>{{ $order->invoice_no }}</h1><p>Total: ${{ $order->total }}</p><p>Status: {{ $order->status->value }}</p><p>Shipping: {{ $order->shipping_address }}</p></body></html>

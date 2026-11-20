@@ -1,0 +1,1 @@
+<!doctype html><html><body class="p-6">@vite(['resources/css/app.css','resources/js/app.js'])<h1>Categories</h1><form method="POST" action="{{ route('admin.categories.store') }}">@csrf<input name="name"><button>Add</button></form>@foreach($categories as $category)<div>{{ $category->name }} ({{ $category->products_count }})</div>@endforeach</body></html>

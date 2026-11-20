@@ -1,0 +1,1 @@
+<!doctype html><html><head><title>Admin</title>@vite(['resources/css/app.css','resources/js/app.js'])</head><body class="bg-gray-100"><main class="mx-auto max-w-5xl p-6"><h1 class="text-3xl font-bold">Admin Dashboard</h1><p class="mt-4">Manage your ecommerce store.</p></main></body></html>

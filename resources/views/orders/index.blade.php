@@ -1,0 +1,1 @@
+<!doctype html><html><body class="p-6">@vite(['resources/css/app.css','resources/js/app.js'])<h1 class="text-2xl">Orders</h1>@foreach($orders as $order)<a class="block" href="{{ route('orders.show',$order) }}">{{ $order->invoice_no }} — ${{ $order->total }} — {{ $order->status->value }}</a>@endforeach</body></html>

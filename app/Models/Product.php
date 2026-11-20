@@ -6,5 +6,25 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    //
+    protected $guarded = [];
+
+    protected function casts(): array
+    {
+        return ['price' => 'decimal:2', 'is_active' => 'boolean'];
+    }
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+
+    public function cartItems()
+    {
+        return $this->hasMany(CartItem::class);
+    }
+
+    public function orderItems()
+    {
+        return $this->hasMany(OrderItem::class);
+    }
 }
